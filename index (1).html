@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Легенди кубічного світу</title>
+<style>
+:root{--bg:#16191a;--card:#202526;--line:#323839;--text:#f4f6f5;--muted:#a9b2b0;--accent:#8cf03c;--ip:#141718}
+*{box-sizing:border-box;margin:0}
+body{background:radial-gradient(900px 500px at 70% -10%,#2b3a2a 0,transparent 70%),var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.logo{width:34px;height:34px;border-radius:6px;background:var(--accent)}
+header b{font-size:1.25rem}
+header span{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.banner{margin-top:22px;height:150px;border-radius:14px;overflow:hidden;position:relative;background:linear-gradient(180deg,#3f8f3a 0,#c8c63a 62%,#e9b341 100%)}
+.banner::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1f3d1e 0,#1f3d1e 18%,transparent 40%),linear-gradient(0deg,#27402a 0,transparent 45%)}
+.banner::after{content:"";position:absolute;left:50%;bottom:0;width:60px;height:80px;background:#3a4a52;clip-path:polygon(0 100%,0 40%,15% 40%,15% 20%,30% 20%,30% 0,45% 20%,45% 40%,55% 40%,55% 15%,70% 15%,70% 40%,100% 40%,100% 100%)}
+.hero{padding:34px 0 10px}
+.eyebrow{color:var(--accent);font-size:.8rem;font-weight:700;text-transform:uppercase}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.05;margin:14px 0;max-width:12em}
+.lead{color:var(--muted);max-width:34em}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:34px 0 10px}
+.chips a{color:var(--text);text-decoration:none;font-weight:600;font-size:.9rem;padding:9px 18px;background:var(--card);border:1px solid var(--line);border-radius:8px}
+.chips a:hover,.chips a:focus-visible{border-color:var(--accent);outline:none}
+section{padding-top:34px;scroll-margin-top:12px}
+h2{font-size:1.7rem}
+h2 small{font-size:.75rem;color:var(--accent);margin-right:10px;vertical-align:middle}
+.sub{color:var(--muted);margin:8px 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.tag{color:var(--accent);font-size:.75rem;font-weight:700;text-transform:uppercase}
+.card h3{font-size:1.35rem;margin:8px 0}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+.ip{width:100%;text-align:left;background:var(--ip);border:1px solid var(--line);border-radius:8px;padding:10px 14px;color:var(--text);font:inherit;cursor:pointer}
+.ip:hover,.ip:focus-visible{border-color:var(--accent);outline:none}
+.ip b{display:block;font-weight:600}
+.ip span{font-size:.78rem;color:var(--muted)}
+footer{margin-top:40px;font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo"></div><b>Легенди кубічного світу</b><span>Твій світ. Твої правила.</span></header>
+<div class="banner" role="img" aria-label="Пейзаж із замком і горами"></div>
+
+<div class="hero">
+<div class="eyebrow">Незалежні світи. Українська спільнота.</div>
+<h1>Знайди своїх. Будуй своє.</h1>
+<p class="lead">Українські Minecraft-сервери для великих пригод. Обирай режим, знаходь команду та починай свою історію.</p>
+<nav class="chips"><a href="#anarchy">Анархія</a><a href="#survival">Виживання</a><a href="#minigames">Мініігри</a></nav>
+</div>
+
+<section id="anarchy">
+<h2><small>01</small>Анархія</h2>
+<p class="sub">Жодних гарантій. Лише ти та твоя стратегія.</p>
+<div class="grid">
+<div class="card"><div class="tag">Сервер</div><h3>Ua-craft</h3><p>Клани, рейди та боротьба за ресурси. Створи власні правила.</p><button class="ip" data-ip="play.uacraft.sbs"><b>play.uacraft.sbs</b><span>Java · 1.21</span></button></div>
+<div class="card"><div class="tag">Сервер</div><h3>Chill-zone</h3><p>Відкритий світ для тих, хто не шукає легких шляхів.</p><button class="ip" data-ip="chillzone.space"><b>chillzone.space</b><span>Java · 1.21</span></button></div>
+</div>
+</section>
+
+<section id="survival">
+<h2><small>02</small>Виживання</h2>
+<p class="sub">Від першого будинку до власного світу.</p>
+<div class="grid">
+<div class="card"><div class="tag">Сервер</div><h3>Teracube</h3><p>Затишне виживання, спільні будівлі й дружня атмосфера.</p><button class="ip" data-ip="pro.teracube.online"><b>pro.teracube.online</b><span>Java · 1.21</span></button></div>
+<div class="card"><div class="tag">Сервер</div><h3>Kolosok survival</h3><p>Економіка, міста та пригоди серед блокових ігор.</p><button class="ip" data-ip="kolosok.xyz"><b>kolosok.xyz</b><span>Java · 1.21</span></button></div>
+</div>
+</section>
+
+<section id="minigames">
+<h2><small>03</small>Мініігри</h2>
+<p class="sub">Короткі раунди. Великі перемоги.</p>
+<div class="grid">
+<div class="card"><div class="tag">Сервер</div><h3>Minestart</h3><p>BedWars, SkyWars і командні битви з друзями.</p><button class="ip" data-ip="play.minestar.com.ua"><b>play.minestar.com.ua</b><span>Java · 1.21</span></button></div>
+<div class="card"><div class="tag">Сервер</div><h3>Benenecraft</h3><p>Паркур, змагання та новий виклик у кожному раунді.</p><button class="ip" data-ip="mc.benenecraft.net"><b>mc.benenecraft.net</b><span>Java · 1.21</span></button></div>
+</div>
+</section>
+
+</div>
+<script>
+document.querySelectorAll('.ip').forEach(function(btn){
+  var label=btn.querySelector('span'),orig=label.textContent;
+  btn.addEventListener('click',function(){
+    try{navigator.clipboard.writeText(btn.dataset.ip);label.textContent='IP скопійовано';}
+    catch(e){label.textContent='Скопіюй вручну: '+btn.dataset.ip;}
+    setTimeout(function(){label.textContent=orig;},1500);
+  });
+});
+</script>
+</body>
+</html>
